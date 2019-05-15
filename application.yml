@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: SQLSERVER
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+         hibernate:
+           temp.use_jdbc_metadata_defaults: false
+           dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
+  datasource:
+    platform: sqlserver
+    url: jdbc:sqlserver://0.0.0.0:1433;databaseName=
+    username: 
+    password: 
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  
+server:
+    port: 8602
+    servlet:
+      context-path: /employee/communication
